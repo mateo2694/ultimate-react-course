@@ -1,7 +1,7 @@
 // Uses the same styles as Product
 import styles from "./Product.module.css";
 
-export default function Product() {
+export function Pricing() {
   return (
     <main className={styles.product}>
       <section>
