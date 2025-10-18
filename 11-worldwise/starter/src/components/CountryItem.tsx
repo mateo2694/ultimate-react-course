@@ -1,6 +1,11 @@
 import styles from "./CountryItem.module.css";
 
-function CountryItem({ country }) {
+export type Country = {
+  country: string;
+  emoji: string;
+};
+
+export function CountryItem({ country }: { country: Country }) {
   return (
     <li className={styles.countryItem}>
       <span>{country.emoji}</span>
@@ -8,5 +13,3 @@ function CountryItem({ country }) {
     </li>
   );
 }
-
-export default CountryItem;
